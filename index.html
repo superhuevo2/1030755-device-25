@@ -3,10 +3,142 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic">
+    <link rel="stylesheet" href="http://fonts.fontstorage.com/import/gilroy.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header container">
+      <nav class="general-navigation">
+        <img class="main-header-logo" src="img/logo.svg" width="163" height="35" alt="Магазин электроники Девайс" class="main-logo">
+        <ul class="user-nav-list">
+          <li class="user-nav-item user-nav-item-search">
+            <form class="user-nav-search" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="visually-hidden">Поиск по сайту</label>
+              <input class="user-nav-search-input" type="text" name="search" placeholder="Поиск по сайту" id="search-form">
+              <button class="user-nav-search-button">Найти</button>
+            </form>
+          </li>
+          <li class="user-nav-item user-nav-item-login"><a href="login.html">Войти</a></li>
+          <li class="user-nav-item user-nav-item-compare"><a href="compare.html">Сравнить</a></li>
+          <li class="user-nav-item user-nav-item-cart"><a href="cart.html">Корзина</a></li>
+        </ul>
+        <ul class="site-nav-list">
+          <li class="site-nav-item site-nav-item-catalog">
+            <a href="catalog.html">Каталог</a>
+            <div class="site-nav-catalog-container">
+              <ul class="site-nav-catalog-list">
+                <li class="site-nav-catalog-item"><a href="catalog-vr.html">Виртуальная реальность</a></li>
+                <li class="site-nav-catalog-item"><a href="catalog-monopods.html">Моноподы для селфи</a></li>
+                <li class="site-nav-catalog-item"><a href="catalog-action-cam.html">Экшн-камеры</a></li>
+                <li class="site-nav-catalog-item"><a href="catalog-fitness-trackers.html">Фитнес-браслеты</a></li>
+                <li class="site-nav-catalog-item"><a href="catalog-smartwatches.html">Умные часы</a></li>
+                <li class="site-nav-catalog-item"><a href="catalog-quadcopters.html">Квадрокоптеры</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="site-nav-item site-nav-item-delivery"><a href="delivery.html">Доставка</a></li>
+          <li class="site-nav-item site-nav-item-warranty"><a href="warranty.html">Гарантия</a></li>
+          <li class="site-nav-item site-nav-item-contacts"><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section class="slider">
+          <div class="slider-1">
+            <figure class="slider-image">
+              <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка">
+            </figure>
+            <div class="slider-info">
+              <p class="slider-info-slogan">
+                Делай селфи,<br>
+                как Бен Стиллер!
+              </p>
+              <p class="slider-info-description">
+                Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.              
+              </p>
+              <button class="button" type="button">Подробнее</button>
+              <ul class="slider-info-property-list">
+                <li class="slider-info-property-item">8,5 м<span>Длина палки</span></li>
+                <li class="slider-info-property-item">5 кг<span>Вес палки</span></li>
+                <li class="slider-info-property-item">Карбон<span>Мaтериал</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="slider-2">
+            <figure class="slider-image">
+              <img src="img/slider-2.png" width="384" height="486" alt="Самая длинная селфи-палка">
+            </figure>
+            <div class="slider-info">
+              <p class="slider-info-slogan">
+                Худеем<br>
+                правильно!
+              </p>
+              <p class="slider-info-description">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы  не пропускать занятия и соблюдать диету.             
+              </p>
+              <button class="button" type="button">Подробнее</button>
+              <ul class="slider-info-property-list">
+                <li class="slider-info-property-item">48 часов<span>Без подзарядки</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="slider-3">
+            <figure class="slider-image">
+              <img src="img/slider-3.png" width="384" height="486" alt="Самая длинная селфи-палка">
+            </figure>
+            <div class="slider-info">
+              <p class="slider-info-slogan">
+                Порхает как бабочка, жалит как пчела!
+              </p>
+              <p class="slider-info-description">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.              
+              </p>
+              <button class="button" type="button">Подробнее</button>
+              <ul class="slider-info-property-list">
+                <li class="slider-info-property-item">800 м<span>Дальность полета</span></li>
+                <li class="slider-info-property-item">50 м<span>Радиус поражения</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="popular-goods">
+          <ul class="popular-goods-list">
+            <li><a class="popular-goods-item popular-goods-item-vr" href="catalog-vr.html"><span>Виртуальная реальность</span></a></li>
+            <li><a class="popular-goods-item popular-goods-item-monopods" href="catalog-monopods.html"><span>Моноподы для селфи</span></a></li>
+            <li><a class="popular-goods-item popular-goods-item-action-cam" href="catalog-action-cam.html"><span>Экшн-камеры</span></a></li>
+            <li><a class="popular-goods-item popular-goods-item-trackers" href="catalog-fitness-trackers.html"><span>Фитнес-браслеты</span></a></li>
+            <li><a class="popular-goods-item popular-goods-item-smartwatches" href="catalog-smartwatches.html"><span>Умные часы</span></a></li>
+            <li><a class="popular-goods-item popular-goods-item-quadcopters" href="catalog-quadcopters.html"><span>Квадрокоптеры</span></a></li>
+          </ul>
+        </section>
+      </div>
+      <section class="service">
+        <form class="service-form">
+          <fieldset>
+            <label for="delivery-input"></label>
+            <input type="radio" name="delivery" id="delivery-input">Доставка</input>
+            <label for="delivery-input"></label>
+            <input type="radio" name="warranty" id="warranty-input">Гарантия</input>
+            <label for="credit-input"></label>
+            <input type="radio" name="credit" id="credit-input">Кредит</input>
+        </fieldset>
+      </form>
+        <div class="service-delivery">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+        <div class="service-warranty">
+          <h3>Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        </div>
+        <div class="service-credit">
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

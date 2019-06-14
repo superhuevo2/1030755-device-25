@@ -1,0 +1,317 @@
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #464646;
+
+  background-color: #ffffff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-header {
+  position: relative;
+
+  padding-bottom: 125px;
+  margin-top: 40px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+
+  border: 1px solid transparent;
+
+  outline: 1px dashed blue;
+}
+
+.main-header a {
+  color: #000000;
+
+  text-decoration: none;
+}
+
+.general-navigation {
+  margin-top: -20px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.main-header-logo {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: 163px;
+  height: 35px;
+}
+
+.user-nav-list {
+  display: flex;
+
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-nav-item {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.user-nav-item-search {
+  width: 440px;
+  margin-right: 100px;
+}
+
+.user-nav-item-login {
+  width: 260px;
+  margin-right: 20px;
+}
+
+.user-nav-item-compare {
+  width: 100px;
+  
+}
+
+.user-nav-item-cart {
+  width: 100px;
+  margin-left: auto;
+}
+
+.site-nav-list {
+  display: flex;
+
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  list-style: none;
+}
+
+.site-nav-item {
+  width: 140px;
+}
+
+.site-nav-item-catalog {
+  width: 340px;
+  margin-right: 200px;
+}
+
+.site-nav-catalog-container {
+  display: none;
+
+  position: absolute;
+  left: 0px;
+
+  width: 100%;
+  padding-top: 25px;
+
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300px;
+  line-height: 36px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+
+  outline: 1px dashed blue;
+}
+
+.site-nav-catalog-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-nav-item-delivery {
+  margin-right: 20px;
+}
+
+.site-nav-item-contacts {
+  margin-left: auto;
+}
+
+.slider-1,
+.slider-2,
+.slider-3 {
+  display: flex;
+}
+
+
+.slider-2, 
+.slider-3 {
+  display: none;
+}
+
+.slider-image {
+  width: 384px;
+  height: 486px;
+  margin: 0;
+  margin-left: 80px;
+  margin-right: 140px;
+
+}
+
+.slider-info {
+  width: 500px;
+}
+
+.slider-info-slogan {
+  font-family: "Gilroy";
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 56px;
+
+  margin: 0px;
+  padding: 0px;
+  margin-top: 85px;
+  margin-bottom: 30px;
+}
+
+.slider-info-description {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 40px;
+}
+
+.slider button {
+  margin-bottom: 50px;
+}
+
+.slider-info-property-list {
+  display: flex;
+
+  margin: 0px;
+  padding: 0px;
+
+  list-style: none;
+}
+
+.slider-info-property-item {
+  font-family: "Gilroy";
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+
+  width: 140px;
+}
+
+.slider-info-property-item span {
+  display: block;
+
+  margin: 0;
+  padding: 0px;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.popular-goods-list {
+  display: flex;
+  flex-wrap: wrap;
+  
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.popular-goods-list li {
+  margin: 0px;
+  margin-right: 40px;
+  padding: 0px;
+}
+
+.popular-goods-list li:nth-child(6n) {
+  margin-right: 0px;
+}
+
+.popular-goods-item {
+  display: block;
+
+  width: 160px;
+}
+
+.popular-goods-item span {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 160px;
+
+  background-color: #ffffff;
+}
+
+.popular-goods-item::before {
+  position: absolute;
+
+  content: "";
+
+  width: 160px;
+  height: 160px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popular-goods-item-vr::before {
+  background-image: url("../img/popular-vr.svg");
+}
+
+.popular-goods-item-monopods::before {
+  background-image: url("../img/popular-2.svg");
+}
+
+.popular-goods-item-action-cam::before {
+  background-image: url("../img/popular-action-cam.svg");
+}
+
+.popular-goods-item-trackers::before {
+  background-image: url("../img/popular-fitness-trackers.svg");
+}
+
+.popular-goods-item-smartwatches::before {
+  background-image: url("../img/popular-smartwatches.svg");
+}
+
+.popular-goods-item-quadcopters::before {
+  background-image: url("../img/popular-quadcopters.svg");
+}
+
