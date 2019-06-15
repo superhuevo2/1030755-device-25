@@ -315,3 +315,217 @@ input[type='radio'].visually-hidden {
   background-image: url("../img/popular-quadcopters.svg");
 }
 
+.service {
+  background-color: #e5e5e5;
+}
+
+.service-inner {
+  display: flex;
+}
+
+.service-form {
+  width: 280px;
+}
+
+
+
+.service-description-wrapper {
+  width: 880px;
+}
+
+.service-description h3 {
+  font-family: "Gilroy";
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 56px;
+  color: #000000;
+}
+
+.service-description p {
+  width: 460px;
+}
+
+.service-description {
+  position: relative;
+}
+
+.service-description-warranty,
+.service-description-credit {
+  display: none;
+}
+
+.service-description::before {
+  content: "";
+
+  position: absolute;
+  right: 0px;
+  top: 0px;
+
+  width: 156px;
+  height: 186px;
+}
+
+.service-description-delivery::before {
+  background-image: url("../img/delivery.svg");
+  background-repeat: round;
+}
+
+.service-description-warranty::before {
+  background-image: url("../img/warranty.svg");
+  background-repeat: round;
+}
+
+.service-description-credit::before {
+  background-image: url("../img/credit.svg");
+  background-repeat: round;
+}
+
+.popular-brands-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.popular-brands-item {
+  width: 260px;
+  height: 100px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  width: 460px;
+
+}
+
+.about h2 {
+  font-family: "Gilroy";
+  font-size: 47px;
+  font-weight: 800px;
+  line-height: 48px;
+}
+
+.contacts {
+  width: 560px;
+
+}
+
+.contacts h2 {
+  font-family: "Gilroy";
+  font-size: 47px;
+  font-weight: 800px;
+  line-height: 48px;
+}
+
+.contacts-map {
+  width: 560px;
+  height: 222px;
+
+  background-image: url("../img/map.jpg")
+}
+
+.main-footer {
+  background-color: #464646;
+}
+
+.footer-logo {
+  width: 163px;
+  height: 35px;
+}
+
+.footer-navigation-wrapper-first {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-user-nav-list {
+  display: flex;
+
+  width: 360px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-user-nav-list a {
+  font-size: 15px;
+  line-height: 36px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  text-decoration: none;
+}
+
+.footer-navigation-wrapper-second {
+  display: flex;
+}
+
+.footer-site-nav-list {
+  display: flex;
+
+  width: 440px;
+  margin: 0 auto;
+
+  list-style: none;
+}
+
+.footer-site-nav-list a {
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  text-decoration: none;
+}
+
+.extra-info {
+  display: flex;
+}
+
+.footer-socials-list {
+  display: flex;
+
+  list-style: none;
+}
+
+.footer-socials-item {
+  display: block;
+
+  width: 32px;
+  height: 32px;
+
+  text-decoration: none;
+}
+
+.footer-socials-item-twitter {
+  background-image: url("../img/twitter.svg")
+}
+
+.footer-socials-item-instagram {
+  background-image: url("../img/instagram.svg")
+}
+
+.footer-socials-item-facebook {
+  background-image: url("../img/fb.svg")
+}
+
+.copyright {
+  margin-left: auto;
+}
+.copyright a {
+  display: block;
+
+  width: 27px;
+  height: 35px;
+
+  background-image: url("../img/logo-html.svg");
+  background-repeat: no-repeat;
+}
