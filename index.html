@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header container">
+    <header class="main-header main-header-index container">
       <nav class="general-navigation">
         <img class="main-header-logo" src="img/logo.svg" width="163" height="35" alt="Магазин электроники Девайс">
         <ul class="user-nav-list">
@@ -26,21 +26,33 @@
         </ul>
         <ul class="site-nav-list">
           <li class="site-nav-item site-nav-item-catalog">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="site-nav-item-link site-nav-item-link-catalog" href="catalog.html">Каталог товаров</a>
             <div class="site-nav-catalog-container">
               <ul class="site-nav-catalog-list">
-                <li class="site-nav-catalog-item"><a href="catalog-vr.html">Виртуальная реальность</a></li>
-                <li class="site-nav-catalog-item"><a href="catalog-monopods.html">Моноподы для селфи</a></li>
-                <li class="site-nav-catalog-item"><a href="catalog-action-cam.html">Экшн-камеры</a></li>
-                <li class="site-nav-catalog-item"><a href="catalog-fitness-trackers.html">Фитнес-браслеты</a></li>
-                <li class="site-nav-catalog-item"><a href="catalog-smartwatches.html">Умные часы</a></li>
-                <li class="site-nav-catalog-item"><a href="catalog-quadcopters.html">Квадрокоптеры</a></li>
+                <li class="site-nav-catalog-list-first">
+                  <ul class="site-nav-catalog-list-inner">
+                    <li class="site-nav-catalog-list-inner-item"><a href="catalog-vr.html">Виртуальная реальность</a></li>
+                    <li class="site-nav-catalog-list-inner-item"><a href="catalog-monopods.html">Моноподы для селфи</a></li>
+                    <li class="site-nav-catalog-list-inner-item"><a href="catalog-action-cam.html">Экшн-камеры</a></li>
+                  </ul>
+                </li>
+                <li class="site-nav-catalog-list-second">
+                  <ul class="site-nav-catalog-list-inner">
+                    <li class="site-nav-catalog-list-inner-item"><a href="catalog-fitness-trackers.html">Фитнес-браслеты</a></li>
+                    <li class="site-nav-catalog-list-inner-item"><a href="catalog-smartwatches.html">Умные часы</a></li>
+                  </ul>
+                </li>
+                <li class="site-nav-catalog-list-third">
+                  <ul class="site-nav-catalog-list-inner">
+                    <li class="site-nav-catalog-list-inner-item"><a href="catalog-quadcopters.html">Квадрокоптеры</a></li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </li>
-          <li class="site-nav-item site-nav-item-delivery"><a href="delivery.html">Доставка</a></li>
-          <li class="site-nav-item site-nav-item-warranty"><a href="warranty.html">Гарантия</a></li>
-          <li class="site-nav-item site-nav-item-contacts"><a href="contacts.html">Контакты</a></li>
+          <li class="site-nav-item site-nav-item-delivery"><a class="site-nav-item-link site-nav-item-link-delivery" href="delivery.html">Доставка</a></li>
+          <li class="site-nav-item site-nav-item-warranty"><a class="site-nav-item-link site-nav-item-link-warranty" href="warranty.html">Гарантия</a></li>
+          <li class="site-nav-item site-nav-item-contacts"><a class="site-nav-item-link site-nav-item-link-contacts" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -49,7 +61,7 @@
         <h1 class="visually-hidden">Магазин электроники Девайс</h1>
         <section class="slider">
           <h2 class="visually-hidden">Слайдер с товарами</h2>
-          <div class="slider-1">
+          <div class="slide slide-1">
             <h3 class="visually-hidden">Самая длинная селфи палка</h3>
             <figure class="slider-image">
               <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка">
@@ -70,7 +82,7 @@
               </ul>
             </div>
           </div>
-          <div class="slider-2">
+          <div class="slide slide-2">
             <h3 class="visually-hidden">Фитнес-трекер</h3>
             <figure class="slider-image">
               <img src="img/slider-2.png" width="384" height="486" alt="Самая длинная селфи-палка">
@@ -89,7 +101,7 @@
               </ul>
             </div>
           </div>
-          <div class="slider-3">
+          <div class="slide slide-3">
             <h3 class="visually-hidden">Квадрокоптер</h3>
             <figure class="slider-image">
               <img src="img/slider-3.png" width="384" height="486" alt="Самая длинная селфи-палка">
@@ -124,21 +136,21 @@
       <section class="service">
         <h2 class="visually-hidden">Наши услуги</h3>
         <div class="service-inner container">
+          <input class="visually-hidden filter-form-input" type="radio" name="service-input" id="delivery-input" checked>
+          <input class="visually-hidden filter-form-input" type="radio" name="service-input" id="warranty-input">
+          <input class="visually-hidden filter-form-input" type="radio" name="service-input" id="credit-input">
           <form class="service-form">
             <fieldset>
               <legend class="visually-hidden">Перечень услуг</legend>
               <ul class="service-form-list">
                 <li>
-                  <label for="delivery-input">Доставка</label>
-                  <input type="radio" name="service-input" id="delivery-input">
+                  <label class="button service-button service-button-delivery" for="delivery-input">Доставка</label>
                 </li>
                 <li>
-                  <label for="warranty-input">Гарантия</label>
-                  <input type="radio" name="service-input" id="warranty-input">
+                  <label class="button service-button service-button-warranty" for="warranty-input">Гарантия</label>
                 </li>
                 <li>
-                  <label for="credit-input">Кредит</label>
-                  <input type="radio" name="service-input" id="credit-input">
+                  <label class="button service-button service-button-credit" for="credit-input">Кредит</label>
                 </li>   
               </ul>
             </fieldset>
@@ -166,10 +178,10 @@
         <section class="popular-brands">
           <h2 class="visually-hidden">Популярные бренды</h2>
           <ul class="popular-brands-list">
-            <li class="popular-brands-item"><a href="catalog-dgi.html"><img src="img/logo-dji.png" width="260" height="100" alt="Продукция DGI"></a></li>
-            <li class="popular-brands-item"><a href="catalog-sp.html"><img src="img/logo-sp-g.png" width="260" height="100" alt="Продукция SP-Gadgets"></a></li>
-            <li class="popular-brands-item"><a href="catalog-gopro.html"><img src="img/logo-gopro.png" width="260" height="100" alt="Продукция GoPro"></a></li>
-            <li class="popular-brands-item"><a href="catalog-vive.html"><img src="img/logo-vive.png" width="260" height="100" alt="Продукция Vive"></a></li>
+            <li class="popular-brands-item"><a class="popular-brands-item-link" href="catalog-dgi.html"><img src="img/logo-dji.png" width="260" height="100" alt="Продукция DGI"></a></li>
+            <li class="popular-brands-item"><a class="popular-brands-item-link" href="catalog-sp.html"><img src="img/logo-sp-g.png" width="260" height="100" alt="Продукция SP-Gadgets"></a></li>
+            <li class="popular-brands-item"><a class="popular-brands-item-link" href="catalog-gopro.html"><img src="img/logo-gopro.png" width="260" height="100" alt="Продукция GoPro"></a></li>
+            <li class="popular-brands-item"><a class="popular-brands-item-link" href="catalog-vive.html"><img src="img/logo-vive.png" width="260" height="100" alt="Продукция Vive"></a></li>
           </ul>
         </section>
         <div class="index-columns">
@@ -201,17 +213,19 @@
           <div class="footer-navigation-wrapper-first">
             <img class="footer-logo" src="img/logo-footer.svg" width="163" height="35" alt="Магазин электроники Девайс">
             <ul class="footer-user-nav-list">
-              <li class="footer-user-nav-item footer-user-nav-item-login"><a href="login.html">Войти</a></li>
-              <li class="footer-user-nav-item footer-user-nav-item-compare"><a href="compare.html">Сравнить</a></li>
-              <li class="footer-user-nav-item footer-user-nav-item-cart"><a href="cart.html">Корзина</a></li>
+              <li class="footer-user-nav-item"><a class="footer-user-nav-link footer-user-nav-link-login" href="login.html">Войти</a></li>
+              <li class="footer-user-nav-item"><a class="footer-user-nav-link footer-user-nav-link-compare" href="compare.html">Сравнить</a></li>
+              <li class="footer-user-nav-item"><a class="footer-user-nav-link footer-user-nav-link-cart" href="cart.html">Корзина</a></li>
             </ul>
           </div>
           <div class="footer-navigation-wrapper-second">
+            <p class="footer-navigation-contacts footer-navigation-contacts-adress">г.Москва, ул. Строителей, 15</p>
             <ul class="footer-site-nav-list">
-              <li class="footer-site-nav-item footer-site-nav-item-delivery"><a href="delivery.html">Доставка</a></li>
-              <li class="footer-site-nav-item footer-site-nav-item-warranty"><a href="warranty.html">Гарантия</a></li>
-              <li class="footer-site-nav-item footer-site-nav-item-contacts"><a href="contacts.html">Контакты</a></li>
+              <li class="footer-site-nav-item"><a href="delivery.html">Доставка</a></li>
+              <li class="footer-site-nav-item"><a href="warranty.html">Гарантия</a></li>
+              <li class="footer-site-nav-item"><a href="contacts.html">Контакты</a></li>
             </ul>
+            <p class="footer-navigation-contacts footer-navigation-contacts-phone">Тел.: +7(495) 495-95-95</p>
           </div>
           <div class="extra-info">
             <ul class="footer-socials-list">
