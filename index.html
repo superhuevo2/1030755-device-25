@@ -238,5 +238,30 @@
         </nav>
       </div>
     </footer>
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="feedback-form-wrapper">
+          <p>
+            <label class="feedback-form-label" for="feedback-name">Ваше имя</label>
+            <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label class="feedback-form-label" for="feedback-email">Ваш e-mail</label>
+            <input type="text" name="email" id="feedback-email" placeholder="email@example.com">
+          </p>
+        </div>
+        <p>
+          <label class="feedback-form-label" for="feedback-message">Текст письма</label>
+          <textarea name="message" id="feedback-message" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Карта крупно</h2>
+      <p class="visually-hidden">Адрес: г. Москва, ул. Строителей, 15</p>
+    </section>
   </body>
 </html>
