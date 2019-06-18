@@ -142,7 +142,7 @@ input[type='radio'].visually-hidden {
   margin-top: 0px;
   margin-bottom: 20px;
   width: 163px;
-  height: 35px;
+  height: 36px;
 }
 
 .main-header-logo[href]:hover {
@@ -1066,12 +1066,13 @@ input[type='radio'].visually-hidden {
 .catalog-columns {
   display: flex;
 
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
 }
 
 .filter {
   width: 470px;
+  margin-left: -140px;
 
   background-color: #eeeeee;
 }
@@ -1288,11 +1289,14 @@ input[type='radio'].visually-hidden {
 }
 
 .catalog {
-  width: 970px;
+  width: 830px;
 }
 
 .catalog-sorting {
   display: flex;
+
+  width: 830px;
+  padding-right: 140px;
 
   background-color: #ebebeb;
 }
@@ -1629,6 +1633,8 @@ input[type='radio'].visually-hidden {
   background-color: #464646;
 
   padding-top: 50px;
+
+  padding-bottom: 65px;
 }
 
 .footer-navigation-wrapper-first {
@@ -1641,6 +1647,14 @@ input[type='radio'].visually-hidden {
 .footer-logo {
   width: 163px;
   height: 35px;
+}
+
+.footer-logo-link:hover .footer-logo{
+  opacity: 0.6;
+}
+
+.footer-logo-link:active .footer-logo{
+  opacity: 0.3;
 }
 
 .footer-user-nav-list {
@@ -1695,6 +1709,22 @@ input[type='radio'].visually-hidden {
   background-image: url(../img/cart-footer-icon.svg);
 }
 
+.footer-user-nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-user-nav-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-user-nav-link:hover::before {
+  opacity: 0.6;
+}
+
+.footer-user-nav-link:active::before {
+  opacity: 0.3;
+}
+
 .footer-navigation-wrapper-second {
   display: flex;
   flex-wrap: wrap;
@@ -1723,7 +1753,7 @@ input[type='radio'].visually-hidden {
   width: 140px;
 }
 
-.footer-site-nav-list a {
+.footer-site-nav-item-link {
   font-family: "Gilroy";
   font-size: 18px;
   line-height: 24px;
@@ -1733,6 +1763,14 @@ input[type='radio'].visually-hidden {
   letter-spacing: 3px;
 
   text-decoration: none;
+}
+
+.footer-site-nav-item-link:hover {
+  opacity: 0.6;
+}
+
+.footer-site-nav-item-link:active {
+  opacity: 0.3;
 }
 
 .extra-info {
@@ -1775,6 +1813,14 @@ input[type='radio'].visually-hidden {
   opacity: 0.3;
 }
 
+.footer-socials-item:hover {
+  opacity: 0.6;
+}
+
+.footer-socials-item:active {
+  opacity: 0.1;
+}
+
 .footer-socials-list li {
   margin-right: 23px;
 }
@@ -1807,6 +1853,14 @@ input[type='radio'].visually-hidden {
 
   background-image: url("../img/logo-html.svg");
   background-repeat: no-repeat;
+}
+
+.copyright a:hover {
+  opacity: 0.6;
+}
+
+.copyright a:active {
+  opacity: 0.3;
 }
 
 .modal {
