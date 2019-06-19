@@ -481,13 +481,15 @@ input[type='radio'].visually-hidden {
 .slider-controls {
   position: absolute;
   top: 350px;
-  right: 0px;
+  right: 50px;
 
   display: flex;
 }
 
 .slider-control {
-  position: absolute;
+  position: relative;
+
+  display: block;
 
   width: 10px;
   height: 10px;
@@ -499,21 +501,6 @@ input[type='radio'].visually-hidden {
 
   border: 1px solid #000000;
   border-radius: 50%;
-}
-
-.slider-control-1 {
-  top: 350px;
-  right: 50px;
-}
-
-.slider-control-2 {
-  top: 350px;
-  right: 30px;
-}
-
-.slider-control-3 {
-  top: 350px;
-  right: 10px;
 }
 
 .slider-control::before {
@@ -648,9 +635,9 @@ input[type='radio'].visually-hidden {
 }
 
 
-#product-1:checked ~ label[for="product-1"]::before,
-#product-2:checked ~ label[for="product-2"]::before,
-#product-3:checked ~ label[for="product-3"]::before {
+#product-1:checked ~ .slider-controls label[for="product-1"]::before,
+#product-2:checked ~ .slider-controls label[for="product-2"]::before,
+#product-3:checked ~ .slider-controls label[for="product-3"]::before {
   display: block;
 }
 
