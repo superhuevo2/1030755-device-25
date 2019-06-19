@@ -470,22 +470,73 @@ input[type='radio'].visually-hidden {
 }
 
 .slider {
+  position: relative;
+
   margin-top: -117px;
   margin-left: 60px;
   margin-right: 60px;
   margin-bottom: 100px;
 }
 
-.slide {
-  position: relative;
-}
+.slider-controls {
+  position: absolute;
+  top: 350px;
+  right: 0px;
 
-.slide-1,
-.slide-2,
-.slide-3 {
   display: flex;
 }
 
+.slider-control {
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+  margin-right: 21px;
+
+  font-size: 0;
+
+  background-color: transparent;
+
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.slider-control-1 {
+  top: 350px;
+  right: 50px;
+}
+
+.slider-control-2 {
+  top: 350px;
+  right: 30px;
+}
+
+.slider-control-3 {
+  top: 350px;
+  right: 10px;
+}
+
+.slider-control::before {
+  content: "";
+
+  display: none;
+
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: transparent;
+
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.slide {
+  position: relative;
+}
 
 .slide::before {
   content: "";
@@ -530,7 +581,6 @@ input[type='radio'].visually-hidden {
   margin: 0;
   margin-left: 80px;
   margin-right: 70px;
-
 }
 
 .slider-info {
@@ -591,9 +641,23 @@ input[type='radio'].visually-hidden {
   line-height: 30px;
 }
 
-.slide-2, 
+.slide-1,
+.slide-2,
 .slide-3 {
   display: none;
+}
+
+
+#product-1:checked ~ label[for="product-1"]::before,
+#product-2:checked ~ label[for="product-2"]::before,
+#product-3:checked ~ label[for="product-3"]::before {
+  display: block;
+}
+
+#product-1:checked ~ .slide-1,
+#product-2:checked ~ .slide-2,
+#product-3:checked ~ .slide-3 {
+  display: flex;
 }
 
 .popular-goods {
@@ -716,12 +780,9 @@ input[type='radio'].visually-hidden {
 .service {
   background-color: #e5e5e5;
 
-  border-top: 1px solid transparent;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: -140px;
+  margin-right: -140px;
   margin-bottom: 80px;
-  width: 1440px;
-  box-sizing: border-box;
 }
 
 .service-inner {
@@ -730,23 +791,16 @@ input[type='radio'].visually-hidden {
   margin-top: -30px;
 }
 
-.service-form {
-  width: 280px;
-}
+.service-control-list {
+  position: relative;
 
-.service-form fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-.service-form-list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.service-form-list li:not(:last-child) {
+.service-control-list li:not(:last-child) {
   margin-bottom: 25px
 }
 
@@ -787,15 +841,15 @@ input[type='radio'].visually-hidden {
   display: block;
 }
 
-#delivery-input:checked ~ .service-form .service-button-delivery,
-#warranty-input:checked ~ .service-form .service-button-warranty,
-#credit-input:checked ~ .service-form .service-button-credit {
+#delivery-input:checked ~ .service-control-list .service-button-delivery,
+#warranty-input:checked ~ .service-control-list .service-button-warranty,
+#credit-input:checked ~ .service-control-list .service-button-credit {
   color: #f7e184;
 }
 
-#delivery-input:checked ~ .service-form .service-button-delivery::before,
-#warranty-input:checked ~ .service-form .service-button-warranty::before,
-#credit-input:checked ~ .service-form .service-button-credit::before {
+#delivery-input:checked ~ .service-control-list .service-button-delivery::before,
+#warranty-input:checked ~ .service-control-list .service-button-warranty::before,
+#credit-input:checked ~ .service-control-list .service-button-credit::before {
   top: 0;
 
   height: 100%;
@@ -805,9 +859,9 @@ input[type='radio'].visually-hidden {
   border: none;
 }
 
-#delivery-input:checked ~ .service-form .service-button-delivery::after,
-#warranty-input:checked ~ .service-form .service-button-warranty::after,
-#credit-input:checked ~ .service-form .service-button-credit::after {
+#delivery-input:checked ~ .service-control-list .service-button-delivery::after,
+#warranty-input:checked ~ .service-control-list .service-button-warranty::after,
+#credit-input:checked ~ .service-control-list .service-button-credit::after {
   display: block;
 }
 
