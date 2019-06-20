@@ -51,6 +51,7 @@ input[type='radio'].visually-hidden {
   letter-spacing: 2px;
 
   text-transform: uppercase;
+  text-decoration: none;
 
   padding-top: 8px;
   padding-bottom: 8px;
@@ -109,7 +110,6 @@ input[type='radio'].visually-hidden {
 
   margin-top: 40px;
 
-  /*background-color: rgba(240, 197, 46, 0.5);*/
   background-color: #f7e296;
 
   border: 1px solid transparent;
@@ -140,7 +140,7 @@ input[type='radio'].visually-hidden {
 
 .main-header-logo {
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   width: 163px;
   height: 36px;
 }
@@ -199,14 +199,15 @@ input[type='radio'].visually-hidden {
 
 .user-nav-search-input {
   width: 355px;
-  padding-left: 25px;
-  padding-top: 9px;
+  padding-left: 38px;
+  padding-top: 7px;
   padding-bottom: 8px;
   margin: 0px;
 
   background-color: transparent;
 
   border: none;
+  border-bottom: 2px solid transparent;
 
   box-sizing: border-box;
 
@@ -270,8 +271,8 @@ input[type='radio'].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 7px;
-  left: 0px;
+  top: 9px;
+  left: -11px;
 
   width: 12px;
   height: 13px;
@@ -294,8 +295,8 @@ input[type='radio'].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 7px;
-  left: 0px;
+  top: 11px;
+  left: -4px;
 
   width: 12px;
   height: 13px;
@@ -312,15 +313,15 @@ input[type='radio'].visually-hidden {
 }
 
 .user-nav-item-cart a {
-  padding-left: 15px;
+  padding-left: 41px;
 }
 
 .user-nav-item-cart a::before {
   content: "";
 
   position: absolute;
-  top: 7px;
-  left: 0px;
+  top: 9px;
+  left: 18px;
 
   width: 12px;
   height: 13px;
@@ -362,6 +363,7 @@ input[type='radio'].visually-hidden {
 
   width: 250px;
   margin-right: 290px;
+  padding-bottom: 20px;
 }
 
 .site-nav-item-link-catalog::before, 
@@ -389,12 +391,13 @@ input[type='radio'].visually-hidden {
 
   position: absolute;
   left: -61px;
+  top: 30px;
 
-  width: 1162px;
+  width: 1160px;
   padding-top: 25px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 26px;
+  padding-bottom: 22px;
 
 
   font-family: "Open Sans", Arial, sans-serif;
@@ -422,10 +425,6 @@ input[type='radio'].visually-hidden {
   padding: 0;
 
   list-style: none;
-}
-
-.site-nav-item-catalog:hover .site-nav-catalog-container {
-  display: block;
 }
 
 .site-nav-catalog-list-inner {
@@ -469,6 +468,13 @@ input[type='radio'].visually-hidden {
   margin-left: auto;
 }
 
+.site-nav-item-catalog:hover .site-nav-catalog-container,
+.site-nav-item-catalog:focus-within .site-nav-catalog-container,
+.site-nav-catalog-container:hover,
+.site-nav-catalog-container:focus {
+  display: block;
+}
+
 .slider {
   position: relative;
 
@@ -480,10 +486,15 @@ input[type='radio'].visually-hidden {
 
 .slider-controls {
   position: absolute;
-  top: 350px;
-  right: 50px;
+  top: 340px;
+  right: 0px;
 
   display: flex;
+  flex-wrap: wrap;
+  
+  outline: 1px dashed blue;
+
+  z-index: 2;
 }
 
 .slider-control {
@@ -495,12 +506,14 @@ input[type='radio'].visually-hidden {
   height: 10px;
   margin-right: 21px;
 
-  font-size: 0;
+  font-size: 0px;
 
   background-color: transparent;
 
   border: 1px solid #000000;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .slider-control::before {
@@ -613,7 +626,7 @@ input[type='radio'].visually-hidden {
   font-weight: 300;
   line-height: 48px;
 
-  width: 140px;
+  margin-right: 20px;
 }
 
 .slider-info-property-item span {
@@ -645,6 +658,12 @@ input[type='radio'].visually-hidden {
 #product-2:checked ~ .slide-2,
 #product-3:checked ~ .slide-3 {
   display: flex;
+}
+
+#product-1:focus ~ .slider-controls label[for="product-1"],
+#product-2:focus ~ .slider-controls label[for="product-2"],
+#product-3:focus ~ .slider-controls label[for="product-3"] {
+  outline: -webkit-focus-ring-color auto 5px;
 }
 
 .popular-goods {
@@ -773,9 +792,24 @@ input[type='radio'].visually-hidden {
 }
 
 .service-inner {
+  position: relative;
+
   display: flex;
 
   margin-top: -30px;
+}
+
+.service-inner::before {
+  content: "";
+
+  position: absolute;
+  left: 280px;
+  top: -55px;
+
+  width: 7px;
+  height: 319px;
+
+  background-color: #000000;
 }
 
 .service-control-list {
@@ -852,8 +886,16 @@ input[type='radio'].visually-hidden {
   display: block;
 }
 
+#delivery-input:focus ~.service-control-list .service-button-delivery,
+#warranty-input:focus ~ .service-control-list .service-button-warranty,
+#credit-input:focus ~ .service-control-list .service-button-credit {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 .service-description-wrapper {
   width: 880px;
+  margin-left: 250px;
+  margin-top: -32px;
 }
 
 .service-description-delivery,
@@ -862,24 +904,8 @@ input[type='radio'].visually-hidden {
   display: none;
 }
 
-.service-description h3 {
-  font-family: "Gilroy";
-  font-size: 47px;
-  font-weight: 800;
-  line-height: 56px;
-  color: #000000;
-
-  margin-top: 0;
-}
-
-.service-description p {
-  width: 450px;
-}
-
 .service-description {
   position: relative;
-
-  margin-left: 120px;
 }
 
 .service-description::before {
@@ -906,6 +932,20 @@ input[type='radio'].visually-hidden {
 .service-description-credit::before {
   background-image: url("../img/credit.svg");
   background-repeat: round;
+}
+
+.service-description h3 {
+  font-family: "Gilroy";
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 56px;
+  color: #000000;
+
+  margin-top: 0;
+}
+
+.service-description p {
+  width: 450px;
 }
 
 #delivery-input:checked ~ .service-description-wrapper .service-description-delivery,
@@ -1905,17 +1945,32 @@ input[type='radio'].visually-hidden {
 }
 
 .modal {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
 
+
+  display: none;
+
+  background-color: #ffffff;
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+
+  z-index: 5;
+}
+
+.modal:target {
+  display: block;
 }
 
 .modal-feedback {
   width: 960px;
-  padding-top: 90px;
+  
+  padding-top: 80px;
   padding-left: 100px;
   padding-right: 100px;
-  padding-bottom: 90px;
+  padding-bottom: 80px;
+  margin-left: -480px;
+  margin-top: -280px;
 
   box-sizing: border-box;
 }
@@ -2015,7 +2070,9 @@ input[type='radio'].visually-hidden {
 .modal-map {
   width: 960px;
   height: 560px;
+  margin-left: -480px;
+  margin-top: -280px;
 
   background-image: url("../img/map-big.jpg");
-  background-repeat: no-repeat;
+  background-repeat: round;
 }
