@@ -1819,6 +1819,10 @@ margin-right: 0;
   padding-bottom: 65px;
 }
 
+.main-footer a:focus {
+  outline-color: #91c92f;
+}
+
 .footer-navigation-wrapper-first {
   display: flex;
   justify-content: space-between;
