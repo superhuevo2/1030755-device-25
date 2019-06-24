@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic">
     <link rel="stylesheet" href="http://fonts.fontstorage.com/import/gilroy.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -199,17 +199,17 @@
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>
-            <button class="button" type="button">Подробнее о нас</button>
+            <button class="button button-about" type="button">Подробнее о нас</button>
           </section>
-          <section class="contacts"  id="point-contacts">
+          <section class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a class="map-link" href="#map-big">
+            <a class="map-link" href="contacts.html">
               <div class="contacts-map">
                 <h3 class="visually-hidden">Как нас найти</h3>
               </div>
             </a>  
-            <a href="#write-us" class="button">Напишите нам</a>
+            <a href="writeus.html" class="button button-writeus">Напишите нам</a>
           </section>
         </div>
       </div>
@@ -245,7 +245,7 @@
         </nav>
       </div>
     </footer>
-    <section class="modal modal-feedback" id="write-us">
+    <section class="modal modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="feedback-form-wrapper">
@@ -264,12 +264,12 @@
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <a class="modal-close" href="#point-contacnts">Закрыть</a>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal modal-map" id="map-big">
       <h2 class="visually-hidden">Карта крупно</h2>
       <p class="visually-hidden">Адрес: г. Москва, ул. Строителей, 15</p>
-      <a class="modal-close" href="#point-contacnts">Закрыть</a>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

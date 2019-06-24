@@ -48,15 +48,15 @@ input[type='radio'].visually-hidden {
   line-height: 24px;
   font-weight: 800;
   color: #000000;
-  letter-spacing: 2px;
+  letter-spacing: 3.9px;
 
   text-transform: uppercase;
   text-decoration: none;
 
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 44px;
+  padding-right: 39px;
 
   background-color: transparent;
 
@@ -108,7 +108,7 @@ input[type='radio'].visually-hidden {
 .main-header {
   position: relative;
 
-  margin-top: 40px;
+  margin-top: 39px;
 
   background-color: #f7e296;
 
@@ -116,7 +116,7 @@ input[type='radio'].visually-hidden {
 }
 
 .main-header-index {
-  min-height: 300px;
+  min-height: 297px;
 }
 
 .main-header-inner {
@@ -158,15 +158,10 @@ input[type='radio'].visually-hidden {
   flex-wrap: wrap;
 
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   padding: 0;
 
   list-style: none;
-}
-
-.site-nav-item {
-  text-transform: uppercase;
-  letter-spacing: 3px;
 }
 
 .user-nav-item-search {
@@ -187,8 +182,8 @@ input[type='radio'].visually-hidden {
   content: "";
 
   position: absolute;
-  left: 0px;
-  top: 7px;
+  left: 2px;
+  top: 8px;
 
   width: 16px;
   height: 16px;
@@ -355,7 +350,8 @@ input[type='radio'].visually-hidden {
 }
 
 .site-nav-item {
-  width: 140px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .site-nav-item-catalog {
@@ -371,8 +367,8 @@ input[type='radio'].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 3px;
+  right: 11px;
 
   width: 2px;
   height: 16px;
@@ -397,7 +393,7 @@ input[type='radio'].visually-hidden {
   padding-top: 25px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 22px;
+  padding-bottom: 23px;
 
 
   font-family: "Open Sans", Arial, sans-serif;
@@ -407,10 +403,7 @@ input[type='radio'].visually-hidden {
   text-transform: none;
   letter-spacing: 0;
 
-  /*background-color: rgba(240, 197, 46, 0.5);*/
   background-color: #f7e296;
-
-  /*outline: 1px dashed blue;*/
 
   box-sizing: border-box;
 
@@ -461,10 +454,14 @@ input[type='radio'].visually-hidden {
 }
 
 .site-nav-item-delivery {
+  width: 140px;
   margin-right: 20px;
 }
 
 .site-nav-item-contacts {
+  text-align: right;
+
+  width: 140px;
   margin-left: auto;
 }
 
@@ -478,16 +475,16 @@ input[type='radio'].visually-hidden {
 .slider {
   position: relative;
 
-  margin-top: -117px;
+  margin-top: -111px;
   margin-left: 60px;
   margin-right: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 106px;
 }
 
 .slider-controls {
   position: absolute;
-  top: 340px;
-  right: 0px;
+  top: 327px;
+  right: 2px;
 
   display: flex;
   flex-wrap: wrap;
@@ -542,8 +539,8 @@ input[type='radio'].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 0px;
-  right: 200px;
+  top: 37px;
+  right: 400px;
 
   width: 100px;
   height: 7px;
@@ -553,8 +550,8 @@ input[type='radio'].visually-hidden {
 
 .slide::after {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: -13px;
+  right: -11px;
 
   font-family: "Gilroy";
   font-size: 179.2px;
@@ -579,8 +576,8 @@ input[type='radio'].visually-hidden {
   width: 384px;
   height: 486px;
   margin: 0;
-  margin-left: 80px;
-  margin-right: 70px;
+  margin-left: 30px;
+  margin-right: 125px;
 }
 
 .slider-info {
@@ -595,15 +592,15 @@ input[type='radio'].visually-hidden {
 
   margin: 0px;
   padding: 0px;
-  margin-top: 85px;
-  margin-bottom: 30px;
+  margin-top: 79px;
+  margin-bottom: 19px;
 }
 
 .slider-info-description {
-  width: 480px;
+  width: 495px;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 
 .slider button {
@@ -626,7 +623,7 @@ input[type='radio'].visually-hidden {
   font-weight: 300;
   line-height: 48px;
 
-  margin-right: 20px;
+  margin-right: 67px;
 }
 
 .slider-info-property-item span {
@@ -639,6 +636,10 @@ input[type='radio'].visually-hidden {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
+}
+
+.slider-info-property-item:last-child {
+margin-right: 0;
 }
 
 .slide-1,
@@ -667,7 +668,7 @@ input[type='radio'].visually-hidden {
 }
 
 .popular-goods {
-  margin-bottom: 170px;
+  margin-bottom: 211px;
 }
 
 .popular-goods-list {
@@ -714,9 +715,13 @@ input[type='radio'].visually-hidden {
 
   margin: 0;
   padding: 0;
-  padding-top: 160px;
+  padding-top: 194px;
 
   background-color: #ffffff;
+}
+
+.popular-goods-item-monopods span {
+  width: 100px;
 }
 
 .popular-goods-item::after {
@@ -742,33 +747,38 @@ input[type='radio'].visually-hidden {
 
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: center;
 
   z-index: 1;
 }
 
 .popular-goods-item-vr::before {
   background-image: url("../img/popular-vr.svg");
+  background-position: 49% 50%;
 }
 
 .popular-goods-item-monopods::before {
   background-image: url("../img/popular-2.svg");
+  background-position: 52% 95%;
 }
 
 .popular-goods-item-action-cam::before {
   background-image: url("../img/popular-action-cam.svg");
+  background-position: 55% 52%;
 }
 
 .popular-goods-item-trackers::before {
   background-image: url("../img/popular-fitness-trackers.svg");
+  background-position: 52% 53%;
 }
 
 .popular-goods-item-smartwatches::before {
   background-image: url("../img/popular-smartwatches.svg");
+  background-position: 53% 51%;
 }
 
 .popular-goods-item-quadcopters::before {
   background-image: url("../img/popular-quadcopters.svg");
+  background-position: 48% 54%;
 }
 
 .popular-goods-item:hover::after {
@@ -788,7 +798,7 @@ input[type='radio'].visually-hidden {
 
   margin-left: -140px;
   margin-right: -140px;
-  margin-bottom: 80px;
+  margin-bottom: 94px;
 }
 
 .service-inner {
@@ -796,15 +806,15 @@ input[type='radio'].visually-hidden {
 
   display: flex;
 
-  margin-top: -30px;
+  margin-top: -31px;
 }
 
 .service-inner::before {
   content: "";
 
   position: absolute;
-  left: 280px;
-  top: -55px;
+  left: 277px;
+  top: -100px;
 
   width: 7px;
   height: 319px;
@@ -816,6 +826,7 @@ input[type='radio'].visually-hidden {
   position: relative;
 
   margin: 0;
+  margin-top: -20px;
   padding: 0;
 
   list-style: none;
@@ -894,8 +905,9 @@ input[type='radio'].visually-hidden {
 
 .service-description-wrapper {
   width: 880px;
-  margin-left: 250px;
-  margin-top: -32px;
+  margin-left: 241px;
+  margin-top: -31px;
+  margin-bottom: 131px;
 }
 
 .service-description-delivery,
@@ -912,11 +924,11 @@ input[type='radio'].visually-hidden {
   content: "";
 
   position: absolute;
-  right: 75px;
-  top: 0px;
+  right: 66px;
+  top: 16px;
 
-  width: 156px;
-  height: 186px;
+  width: 136px;
+  height: 164px;
 }
 
 .service-description-delivery::before {
@@ -941,7 +953,8 @@ input[type='radio'].visually-hidden {
   line-height: 56px;
   color: #000000;
 
-  margin-top: 0;
+  margin: 0px;
+  margin-bottom: 27px;
 }
 
 .service-description p {
@@ -954,9 +967,17 @@ input[type='radio'].visually-hidden {
   display: block;
 }
 
+.popular-brands {
+  margin-bottom: 93px;
+}
+
 .popular-brands-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding:0;
+  margin: 0;
 
   list-style: none;
 }
@@ -982,13 +1003,13 @@ input[type='radio'].visually-hidden {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 80px;
+  margin-bottom: 81px;
 }
 
 .about {
   position: relative;
 
-  width: 460px;
+  width: 495px;
 }
 
 .about::before {
@@ -1007,25 +1028,31 @@ input[type='radio'].visually-hidden {
 .about h2 {
   font-family: "Gilroy";
   font-size: 47px;
-  font-weight: 800px;
+  font-weight: 800;
   line-height: 48px;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 52px;
+  margin-bottom: 43px;
 }
 
 .about p {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
   padding: 0;
 }
 
 .about p:nth-child(2) {
-  margin-bottom: 42px;
-  
+  margin-bottom: 30px;
 }
 
 .about-delivery-list {
+  font-weight: 700;
+
   margin: 0;
   margin-left: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   padding: 0;
 
   list-style: circle;
@@ -1033,6 +1060,12 @@ input[type='radio'].visually-hidden {
 
 .about-delivery-list li {
   padding-left: 15px;
+  margin-bottom: 10px
+}
+
+.button-about {
+  padding-left: 21px;
+  padding-right: 16px;
 }
 
 .contacts {
@@ -1057,13 +1090,18 @@ input[type='radio'].visually-hidden {
 .contacts h2 {
   font-family: "Gilroy";
   font-size: 47px;
-  font-weight: 800px;
+  font-weight: 800;
   line-height: 48px;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 52px;
+  margin-bottom: 43px;
 }
 
 .contacts p {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 39px;
   padding: 0;
 }
 
@@ -1073,6 +1111,11 @@ input[type='radio'].visually-hidden {
   margin-bottom: 70px;
 
   background-image: url("../img/map.jpg")
+}
+
+.button-writeus {
+  padding-left: 40px;
+  padding-right: 34px;
 }
 
 .inner-title {
@@ -1713,7 +1756,7 @@ input[type='radio'].visually-hidden {
 .main-footer {
   background-color: #464646;
 
-  padding-top: 50px;
+  padding-top: 65px;
 
   padding-bottom: 65px;
 }
@@ -1722,7 +1765,7 @@ input[type='radio'].visually-hidden {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .footer-logo {
@@ -1750,6 +1793,11 @@ input[type='radio'].visually-hidden {
 
 .footer-user-nav-item {
   width: 120px;
+  text-align: center;
+}
+
+.footer-user-nav-item:last-child {
+  text-align: right;
 }
 
 .footer-user-nav-link {
@@ -1769,8 +1817,8 @@ input[type='radio'].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 4px;
+  left: 19px;
 
   width: 13px;
   height: 13px;
@@ -1810,7 +1858,7 @@ input[type='radio'].visually-hidden {
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 60px;
+  margin-bottom: 61px;
 }
 
 .footer-navigation-contacts {
@@ -1823,7 +1871,7 @@ input[type='radio'].visually-hidden {
 .footer-site-nav-list {
   display: flex;
 
-  width: 440px;
+  width: 470px;
   margin: 0 auto;
   padding: 0;
 
@@ -1831,7 +1879,7 @@ input[type='radio'].visually-hidden {
 }
 
 .footer-site-nav-item {
-  width: 140px;
+  width: 155px;
 }
 
 .footer-site-nav-item-link {
@@ -1864,7 +1912,7 @@ input[type='radio'].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 0px;
+  top: 14px;
   left: 0px;
 
   width: 80px;
@@ -1878,7 +1926,7 @@ input[type='radio'].visually-hidden {
 
   margin: 0;
   padding: 0;
-  margin-left: 500px;
+  margin-left: 509px;
 
   list-style: none;
 }
