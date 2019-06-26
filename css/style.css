@@ -1695,7 +1695,7 @@ margin-right: 0;
   margin-bottom: 26px;
 }
 
-.catalog-item-link:hover .catalog-item-image::before {
+.catalog-item:hover .catalog-item-image::before {
   content: "";
 
   position: absolute;
@@ -1710,7 +1710,7 @@ margin-right: 0;
   opacity: 0.7;
 }
 
-.catalog-item-link:hover .catalog-item-extra {
+.catalog-item:hover > .catalog-item-extra {
   display: block;
 }
 
