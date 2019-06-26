@@ -43,7 +43,7 @@ input[type='radio'].visually-hidden {
 
   display: inline-block;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -75,12 +75,12 @@ input[type='radio'].visually-hidden {
   top:16px;
 
   width: 100%;
-  height: 6px;
+  height: 8px;
 
   background-color: #f0c52e;
 
-  border-top: 1px solid #f4d361;
-  border-bottom: 1px solid #f4d361;
+  /*border-top: 1px solid #f4d361;
+  border-bottom: 1px solid #f4d361;*/
 
   z-index: -1;
 }
@@ -341,7 +341,7 @@ input[type='radio'].visually-hidden {
   display: flex;
   flex-wrap: wrap;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -492,8 +492,6 @@ input[type='radio'].visually-hidden {
 
   display: flex;
   flex-wrap: wrap;
-  
-  outline: 1px dashed blue;
 
   z-index: 2;
 }
@@ -557,7 +555,7 @@ input[type='radio'].visually-hidden {
   top: -13px;
   right: -11px;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 179.2px;
   font-weight: 800;
   line-height: 179.2px;
@@ -589,7 +587,7 @@ input[type='radio'].visually-hidden {
 }
 
 .slider-info-slogan {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 56px;
@@ -622,7 +620,7 @@ input[type='radio'].visually-hidden {
 }
 
 .slider-info-property-item {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
@@ -711,7 +709,7 @@ margin-right: 0;
 .popular-goods-item span {
   display: block;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -951,7 +949,7 @@ margin-right: 0;
 }
 
 .service-description h3 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 56px;
@@ -1030,7 +1028,7 @@ margin-right: 0;
 }
 
 .about h2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
@@ -1092,7 +1090,7 @@ margin-right: 0;
 }
 
 .contacts h2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
@@ -1123,7 +1121,7 @@ margin-right: 0;
 }
 
 .inner-title {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
@@ -1205,7 +1203,7 @@ margin-right: 0;
 }
 
 .filter h2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
@@ -1243,7 +1241,7 @@ margin-right: 0;
   position: absolute;
   top: 10px;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -1307,7 +1305,7 @@ margin-right: 0;
 .filter-form-price-pointer {
   position: absolute;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1449,7 +1447,7 @@ margin-right: 0;
 }
 
 .catalog-sorting h3 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
@@ -1606,7 +1604,7 @@ margin-right: 0;
 
   width: 360px;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -1664,7 +1662,7 @@ margin-right: 0;
 
 .button-compare {
 
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
@@ -1718,7 +1716,7 @@ margin-right: 0;
   display: flex;
   justify-content: space-between;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -1735,7 +1733,7 @@ margin-right: 0;
 }
 
 .pagination-button {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -1977,7 +1975,7 @@ margin-right: 0;
 }
 
 .footer-site-nav-item-link {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -2127,7 +2125,7 @@ margin-right: 0;
   margin-bottom: 10px;
   padding: 0;
 
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
