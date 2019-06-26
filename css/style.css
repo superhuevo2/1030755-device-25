@@ -506,6 +506,14 @@ input[type='radio'].visually-hidden {
   margin-left: auto;
 }
 
+.site-nav-item-catalog:hover > .site-nav-catalog-container {
+  display: block;
+}
+
+.site-nav-catalog-container:hover {
+  display: block;
+}
+
 .site-nav-item-catalog:hover .site-nav-catalog-container,
 .site-nav-item-catalog:focus-within .site-nav-catalog-container,
 .site-nav-catalog-container:hover,
