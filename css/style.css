@@ -249,7 +249,8 @@ input[type='radio'].visually-hidden {
   opacity: 0.6;
 }
 
-.user-nav-search-input:focus + .user-nav-search-button {
+.user-nav-search-input:focus + .user-nav-search-button,
+.user-nav-search-button:active {
   display: inline-block;
 }
 
