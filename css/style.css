@@ -34,8 +34,12 @@ input[type='radio'].visually-hidden {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  box-sizing: border-box;
 }
 
 .button {
@@ -825,7 +829,7 @@ margin-right: 0;
 
 .service {
   background-color: #e5e5e5;
-  min-width: 1160px;
+  min-width: 1200px;
 
   /*margin-left: -140px;
   margin-right: -140px;*/
@@ -1910,7 +1914,7 @@ margin-right: 0;
 
 .main-footer {
   background-color: #464646;
-  min-width: 1160px;
+  min-width: 1200px;
 
   padding-top: 65px;
 
