@@ -74,7 +74,7 @@ img {
   background-color: #f0c52e;
  /*border-top: 1px solid #f4d361;
   border-bottom: 1px solid #f4d361;
- */
+  */
   z-index: -1;
 }
 .button:hover::before {
@@ -178,7 +178,7 @@ img {
   padding-left: 19px;
   padding-right: 19px;
   background-color: transparent;
-  border: 2px solid black; 
+  border: 2px solid black;
   vertical-align: bottom;
 }
 .user-nav-search-input:hover {
@@ -625,7 +625,7 @@ img {
   min-width: 1200px;
  /*margin-left: -140px;
   margin-right: -140px;
- */
+  */
   margin-bottom: 94px;
 }
 .service-inner {
@@ -874,7 +874,7 @@ img {
   line-height: 48px;
   color: #000000;
   margin: 0 60px 21px;
- ;
+  ;
 }
 .breadcrumbs {
   display: -webkit-box;
@@ -923,21 +923,22 @@ img {
   transform: rotate(45deg);
 }
 .catalog-columns-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
-
 .catalog-columns-left {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   margin-right: -20px;
   background-color: #eeeeee;
 }
-
 .catalog-columns-left-top {
   width: 100%;
   height: 70px;
   background-color: #dbdbdb;
 }
-
 .catalog-columns-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -947,20 +948,19 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .catalog-columns-right {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   height: 70px;
   margin-left: -20px;
   background-color: #ebebeb;
 }
-
 .filter {
   position:relative;
   width: 330px;
   background-color: #eeeeee;
 }
-
 .filter h2 {
   font-family: Gilroy, Arial, sans-serif;
   font-size: 16px;
@@ -1075,14 +1075,11 @@ img {
   border-radius: 50%;
   background-color: #ababab;
 }
-
-.filter-form-color-input:focus + .filter-form-color-label,
-.filter-form-bluetooth-input:focus + .filter-form-bluetooth-label {
+.filter-form-color-input:focus + .filter-form-color-label, .filter-form-bluetooth-input:focus + .filter-form-bluetooth-label {
   outline-color: -webkit-focus-ring-color;
   outline-style: auto;
   outline-width: 5px;
 }
-
 .filter-form .filter-form-color {
   padding-top: 50px;
   margin-bottom: 33px;
@@ -1104,15 +1101,12 @@ img {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
-
 .filter-form-color-label:hover::before {
   opacity: 0.6;
 }
-
 .filter-form-color-label:active::before {
   opacity: 1;
 }
-
 .filter-form .filter-form-bluetooth {
   padding-top: 52px;
   margin-bottom: 31px;
@@ -1137,15 +1131,12 @@ img {
   background-color: #000000;
   border-radius: 50%;
 }
-
 .filter-form-bluetooth-label:hover::before, .filter-form-bluetooth-label:hover::after {
   opacity: 0.6;
 }
-
 .filter-form-bluetooth-label:active::before, .filter-form-bluetooth-label:active::after {
   opacity: 1;
 }
-
 .filter-form-color-input[disabled] + .filter-form-color-label, .filter-form-bluetooth-input[disabled] + .filter-form-bluetooth-label {
   opacity: 0.25;
   cursor: default;
@@ -1165,7 +1156,6 @@ img {
   width: 830px;
   background-color: #ebebeb;
 }
-
 .catalog-sorting h3 {
   font-family: Gilroy, Arial, sans-serif;
   font-size: 16px;
